@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pengeluaran', function (Blueprint $table) {
-            $table->id();
-            $table->bigInteger('id_pegawai')->nullable(false);
+            $table->bigInteger('id_pegawai')->primary();
             $table->bigInteger('id_pengeluaran')->nullable(false);
             $table->string('nama_pengeluaran',50)->nullable(false);
             $table->dateTime('tgl_pengeluaran')->default('2023-01-01 00:00:00')->nullable(false);
