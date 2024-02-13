@@ -4,15 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class KasirController extends Controller
+class DashboardController extends Controller
 {
     //
     public function index(){
 
-
-
-        
-        return view('dashboard.index', $data);
+        return view('Dashboard.index');
     }
 }
 

@@ -25,7 +25,7 @@
                         </div>
                     </a>
                 </div>
-            @endif
+           
             <div class="col-3">
                 <a href="{{url('dashboard/surat')}}" class="text-decoration-none">
                     <div class="card bg-c-yellow">
@@ -54,10 +54,10 @@
     </div>
 @endsection
 @section('footer')
-    <script src="{{ $jsChart->cdn() }}"></script>
+    <script src=""></script>
 
    
-    <script src="{{ $suratChart->cdn() }}"></script>
+    <script src=""></script>
 
    
 @endsection
