@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PegawaiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login.login');
+// Route::get('/', function () {
+//     return view('login.login');
+// });
+
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+
+Route::prefix('dashboard')->group(function() {
+    Route::get('/',[DashboardController::class,'index']);
+
 });

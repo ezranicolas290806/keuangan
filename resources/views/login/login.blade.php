@@ -5,7 +5,7 @@
             margin:0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow' Arial, sans-serif;
         }
 
         body {
@@ -40,10 +40,6 @@
             text-align: center;
             font-weight: bolder;
             text-transform: uppercase;
-        }
-
-        hr{
-            border-top: 2px;
         }
 
         p{
@@ -103,7 +99,7 @@
         <div class="login">
             <form action="">
                 <h1>Login</h1>
-                <p>SparkWash Financials</p>
+                <p>Queen CarWash</p>
                 <label for=""></label>
                 <input type="text" 
                 placeholder="Username">
