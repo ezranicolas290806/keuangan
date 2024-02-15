@@ -4,61 +4,35 @@
   <meta charset="UTF-8">
   <link href="{{ asset('/css/style.css') }}" rel="stylesheet"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @vite(['resources/sass/app.scss','resources/js/app.js'])
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-
-    <div class="sidebar">
-      <div class="header">
-        <div class="list-item logo">
-          <a href="#">
-            <img src="{{ asset('images/gambar2.jpeg') }}" alt="" class="icon" style="width:50px; height:70px;">
-            <span class="description-header"></span>
-          </a>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="main">
-        <div class="nav-item">
-          <a href="#" style="color: #ffffff;">
-            <img src="{{ asset('images/grid.png') }}" alt="" class="icon"  style="width:40px; height:30px;">
-            <span class="description">Dashboard</span>
-          </a>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="main">
-        <div class="nav-item">
-          <a href="#"style="color: #ffffff;">
-            <img src="{{ asset('images/settings.png') }}" alt="" class="icon"  style="width:40px; height:30px;">
-            <span class="description">Layanan</span>
-          </a>
-        </div>
+<nav class="navbar" style="background-color: #00BFFF;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/bkaso.png" style="widht: 80px; height:65px;" alt=""></a>
+      <form class="d-flex" role="search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
     </div>
-<br>
-<br>
-    <div class="main">
-        <div class="nav-item">
-          <a href="#"style="color: #ffffff;">
-            <img src="{{ asset('images/buy.png') }}" alt="" class="icon"  style="width:40px; height:30px;">
-            <span class="description">Pembayaran</span>
-          </a>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="main">
-        <div class="nav-item">
-          <a href="#"style="color: #ffffff;">
-            <img src="{{ asset('images/shopping.png') }}" alt="" class="icon"  style="width:40px; height:30px;">
-            <span class="description">Pengeluaran</span>
-          </a>
-        </div>
-    </div>
-
   </div>
+</nav>
+ <div class="sidebar">
+  <div class="logo d-flex">
+    <img style="width:120px; height:110px; margin-top:-30px; display:flex;" src="images/bkaso.png" alt="Logo">
+    <span >Carwash</span>
+    <br>
+  </div>
+  <ul class="sidebar-nav" style="color:black;">
+    <li><a href="#"><img class="picture" src="images/grid.png" alt="">Dashboard</a></li>
+    <li><a href="#"><img class="picture" src="images/settings.png" alt="">Layanan</a></li>
+    <li><a href="#"><img class="picture" src="images/shopify.png" alt="">Pemasukan</a></li>
+    <li><a href="#"><img class="picture" src="images/shopping.png" alt="">Pengeluaran</a></li>
+  </ul>
+</div>
+
+
+
+
 </body>
 </html>
