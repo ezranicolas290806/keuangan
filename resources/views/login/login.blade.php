@@ -5,7 +5,7 @@
             margin:0;
             padding: 0;
             box-sizing: border-box;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow' Arial, sans-serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         body {
@@ -40,6 +40,10 @@
             text-align: center;
             font-weight: bolder;
             text-transform: uppercase;
+        }
+
+        hr{
+            border-top: 2px;
         }
 
         p{
@@ -94,19 +98,20 @@
 <body>
     <div class="container">
     <div class="right">
-            <img src="gambar2.jpeg" alt="">
+            <img src="{{ asset('images/gambar2.jpeg') }}" alt="">
         </div>
         <div class="login">
-            <form action="">
+            <form action="{{url('/login')}}" method="POST">
+                @csrf
                 <h1>Login</h1>
                 <p>Queen CarWash</p>
+            <div >
                 <label for=""></label>
-                <input type="text" 
-                placeholder="Username">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
                 <label for="">
-                <input type="text" 
-                placeholder="Password">
-                <button>Login</button>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
                 </label>
             </form>
         </div>
