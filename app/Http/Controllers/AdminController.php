@@ -13,7 +13,7 @@ class AdminController extends Controller
     public function indexPembayaran()
     {
         $pembayaran = Pembayaran::all();
-        return view('admin.pembayaran.index', compact('pembayaran'));
+        return view('admin.dashboard', compact('pembayaran'));
     }
 
     // Menampilkan formulir tambah pembayaran

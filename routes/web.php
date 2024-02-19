@@ -27,4 +27,9 @@ use App\Http\Controllers\DashboardController;
 //     return view('welcome');
 // };
 
+Route::get('/', [DashboardController::class, 'index'])->name('login');
 Route::get('/', [DashboardController::class, 'index']);
+Route::get('/dashboard/admin', [AdminController::class, 'indexPembayaran'])->name('admin.dashboard');
+Route::get('/pemilik', [PemilikController::class, 'index']);
+
+
