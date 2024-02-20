@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 
+
 class LayananController extends Controller
 {
     // Menampilkan semua layanan
     public function index()
     {
-        $layanan = Service::all();
-        return response()->json(['layanan' => $layanan], 200);
+        return view('layanan.index');
     }
 
     // Menampilkan detail layanan berdasarkan ID

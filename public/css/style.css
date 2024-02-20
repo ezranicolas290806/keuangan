@@ -16,8 +16,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px; /* Mengatur jarak antar kartu */
-    width: 200px; /* Mengatur lebar kartu */
-    height: 150px; /* Mengatur tinggi kartu */
+    width: 400px; /* Mengatur lebar kartu */
+    height: 550px; /* Mengatur tinggi kartu */
   }
   
   .right-section {

@@ -32,4 +32,8 @@ Route::get('/', [DashboardController::class, 'index'])->name('login');
 Route::get('/', [DashboardController::class, 'index']);
 Route::get('/datakategori',[DatakategoriController::class, 'index']);
 Route::get('/dashboard/admin', [AdminController::class, 'indexPembayaran'])->name('admin.dashboard');
+
+// buat pemilik
 Route::get('/pemilik', [PemilikController::class, 'index']);
+Route::get('/pemilik/layanan', [LayananController::class, 'index'])->name('layanan.index');
+Route::get('/pemilik/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
