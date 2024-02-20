@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  @vite(['resources/sass/app.scss','resources/js/app.js'])
     <style>
         * {
     font-family: "Ubuntu", sans-serif;
@@ -78,7 +79,7 @@ body {
 /* Gaya untuk seluruh navbar */
 .navbar {
     height: 100px;
-    background-color: #137fa3;
+    background-color: #00BFFF;
     overflow: hidden;
 }
 
@@ -181,14 +182,14 @@ body {
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="header">
-        <span >Carwash</span>
-        <div class="list-item logo">
-          <a href="#">
-            <img src="{{ asset('images/bkaso.png') }}" alt="" class="icon" style="width:110px; height:70px padding: 5px;">
+      <div class="header d-flex align-items-center">
+        <span class="order-1">Carwash</span>
+        <!-- <div class="list-item logo"> -->
+          <a href="{{url('/dashboard/admin')}}">
+            <img src="{{ asset('images/bkaso.png') }}" alt="" class="icon object-fit-cover" style="width:110px; height:75px; padding: 5px;">
             <span class="description-header"></span>
           </a>
-        </div>
+        <!-- </div> -->
       </div>
       <br>
       <br>
@@ -204,7 +205,7 @@ body {
       <br>
       <div class="main">
         <div class="nav-item">
-          <a href="#"style="color: #ffffff;">
+          <a href="{{url('datakategori')}}"style="color: #ffffff;">
             <img src="{{ asset('images/datakategori.png') }}" alt="" class="icon"  style="width:40px; height:30px;">
             <span class="description">Data Kategori</span>
           </a>
