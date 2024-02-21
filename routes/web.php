@@ -11,6 +11,7 @@ use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\pemilikController;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PemasukanController;
  
 
 /*
@@ -35,5 +36,10 @@ Route::get('/dashboard/admin', [AdminController::class, 'indexPembayaran'])->nam
 
 // buat pemilik
 Route::get('/pemilik', [PemilikController::class, 'index']);
+Route::get('/pemilik/dashboard', [DashboardController::class, 'index'])->name('dashboardpm.index');
 Route::get('/pemilik/layanan', [LayananController::class, 'index'])->name('layanan.index');
-Route::get('/pemilik/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+Route::get('/pemilik/pemasukan', [PemasukanController::class, 'index'])->name('pemasukanpm.index');
+Route::get('/pemilik/pengeluaran', [PengeluaranController::class, 'index'])->name('pengeluaranpm.index');
+
+// buat kasir
+Route::get('/kasir', [KasirController::class, 'index']);

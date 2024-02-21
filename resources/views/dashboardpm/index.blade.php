@@ -20,15 +20,15 @@
 
 <div class="sidebar">
   <div class="logo d-flex">
-    <img style="width:120px; height:110px; margin-top:-30px; display:flex;" src="images/bkaso.png" alt="Logo">
+    <img style="width:120px; height:110px; margin-top:-30px; display:flex;" src="{{ asset('images/bkaso.png') }}" alt="Logo">
     <span >Carwash</span>
     <br>
   </div>
   <ul class="sidebar-nav" style="color:black;">
-    <li><a href="#"><img class="picture" src="images/grid.png" alt="">Dashboard</a></li>
-    <li><a href="{{route('layanan.index')}}"><img class="picture" src="images/settings.png" alt="">Layanan</a></li>
-    <li><a href="#"><img class="picture" src="images/shopify.png" alt="">Pemasukan</a></li>
-    <li><a href="#"><img class="picture" src="images/shopping.png" alt="">Pengeluaran</a></li>
+    <li><a href="{{route('dashboardpm.index')}}"><img class="picture" src="{{ asset('images/grid.png') }}" alt="">Dashboard</a></li>
+    <li><a href="{{route('layanan.index')}}"><img class="picture" src="{{ asset('images/settings.png') }}" alt="">Layanan</a></li>
+    <li><a href="{{route('pemasukanpm.index')}}"><img class="picture" src="{{ asset('images/shopify.png') }}" alt="">Pemasukan</a></li>
+    <li><a href="{{route('pengeluaranpm.index')}}"><img class="picture" src="{{ asset('images/shopping.png') }}" alt="">Pengeluaran</a></li>
   </ul>
 </div>
 
@@ -36,25 +36,18 @@
   <h2>Dashboard</h2>
   <div class="card-container">
     <div class="card">
-    <h3>Total Transaksi Harian</h3>
+    <h3>Pemasukan</h3>
             <p>Tanggal: 2024-02-20</p>
             <p>Deskripsi: Pencucian kendaraan</p>
-            <p>Jumlah: $200.000</p>
+            <p>Jumlah: $1.000.000</p>
     </div>
     <div class="card">
-    <h3>Total Transaksi Mingguan</h3>
+    <h3>Pengeluaran</h3>
     <p>Tanggal: 2024-02-27</p>
-            <p>Deskripsi: Pencucian kendaraan</p>
-            <p>Jumlah: $5.000.000</p>
+            <p>Deskripsi: Pembelian keperluan Cucian</p>
+            <p>Jumlah: $500.000</p>
     </div>
   </div>
-  <div class="card-container">
-    <div class="card" style="margin-top: 25px">
-    <h3>Total Transaksi Bulanan</h3>
-    <p>Tanggal: 2024-03-20</p>
-            <p>Deskripsi: Pencucian kendaraan</p>
-            <p>Jumlah: $20.00.000</p>
-    </div>
   </div>
 </div>
 

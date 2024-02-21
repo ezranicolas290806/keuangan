@@ -25,10 +25,10 @@
     <br>
   </div>
   <ul class="sidebar-nav" style="color:black;">
-    <li><a href="{{route('dashboard.index')}}"><img class="picture" src="images/grid.png" alt="">Dashboard</a></li>
+    <li><a href="{{route('dashboardpm.index')}}"><img class="picture" src="images/grid.png" alt="">Dashboard</a></li>
     <li><a href="{{route('layanan.index')}}"><img class="picture" src="images/settings.png" alt="">Layanan</a></li>
-    <li><a href="#"><img class="picture" src="images/shopify.png" alt="">Pemasukan</a></li>
-    <li><a href="#"><img class="picture" src="images/shopping.png" alt="">Pengeluaran</a></li>
+    <li><a href="{{route('pemasukanpm.index')}}"><img class="picture" src="{{ asset('images/shopify.png') }}" alt="">Pemasukan</a></li>
+    <li><a href="{{route('pengeluaranpm.index')}}"><img class="picture" src="{{ asset('images/shopping.png') }}" alt="">Pengeluaran</a></li>
   </ul>
 </div>
 

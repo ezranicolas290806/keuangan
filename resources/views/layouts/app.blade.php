@@ -24,7 +24,7 @@
     <br>
   </div>
   <ul class="sidebar-nav" style="color:black;">
-    <li><a href="#"><img class="picture" src="images/grid.png" alt="">Dashboard</a></li>
+    <li><a href="/dashboard"><img class="picture" src="images/grid.png" alt="" class="text-white">Dashboard</a></li>
     <li><a href="#"><img class="picture" src="images/settings.png" alt="">Layanan</a></li>
     <li><a href="#"><img class="picture" src="images/shopify.png" alt="">Pemasukan</a></li>
     <li><a href="#"><img class="picture" src="images/shopping.png" alt="">Pengeluaran</a></li>
