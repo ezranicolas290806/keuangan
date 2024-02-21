@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pengeluaran', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id_pengeluaran')->autoIncrement()->nullable(false);
             $table->timestamps();
+            $table->date('tanggal')->nullable(false);
+            $table->string('deskripsi', 255)->nullable(false);
+            $table->string('jumlah', 10)->nullable(false);
+            $table->string('foto_struk', 255)->nullable(true);
         });
     }
 
@@ -25,4 +29,3 @@ return new class extends Migration
         Schema::dropIfExists('pengeluaran');
     }
 };
-

@@ -21,6 +21,11 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('12345'),
             'role' => 'pegawai'
         ]);
+        // DB::table('pemasukan')->insert({
+        //     'harga' => 
+        //     'deskripsi'
+        //     'tanggal'
+        // })
         
     }
 }

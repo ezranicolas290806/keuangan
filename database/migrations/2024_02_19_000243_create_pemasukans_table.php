@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pemasukan', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id_pemasukan')->autoIncrement()->nullable(false);
             $table->timestamps();
+            $table->date('tanggal')->nullable(false);
+            $table->string('deskripsi', 255)->nullable(false);
+            $table->string('harga', 10)->nullable(false);
+            $table->string('foto_struk', 255)->nullable(true);
         });
     }
 
