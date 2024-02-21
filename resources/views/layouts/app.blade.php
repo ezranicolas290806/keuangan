@@ -13,7 +13,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="{{ asset('images/bkaso.png')}}" style="widht: 80px; height:65px;"
                     alt=""></a>
-            <form class="d-flex" role="search">
+            <form class="d-flex" action="{{ route('logout') }}" method="POST">
+             @csrf
                 <button class="btn btn-danger" type="submit">Logout</button>
             </form>
         </div>
@@ -26,9 +27,9 @@
             <br>
         </div>
         <ul class="sidebar-nav" style="color:rgb(255, 255, 255);">
-            <li><a href="{{url('/dashboard/pemasukan')}}"><img class="picture" src="{{ asset('images/shopify.png') }}"
+            <li><a href="{{url('/pegawai/pemasukan')}}"><img class="picture" src="{{ asset('images/shopify.png') }}"
                         alt="">Pemasukan</a></li>
-            <li><a href="{{url('/dashboard/pengeluaran')}}"><img class="picture"
+            <li><a href="{{url('/pegawai/pengeluaran')}}"><img class="picture"
                         src="{{ asset('images/shopping.png') }}" alt="">Pengeluaran</a></li>
         </ul>
     </div>
