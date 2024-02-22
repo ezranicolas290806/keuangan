@@ -7,6 +7,7 @@
             box-sizing: border-box;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         body {
             display: flex;
             justify-content: center;
@@ -14,6 +15,7 @@
             min-height: 100vh;
             background: ;
         }
+
         .container{
             width:100%;
             height: 550px;
@@ -22,13 +24,16 @@
             background: ;
             box-shadow: 0 10px 15px rgba(0, 0, 0.1);
         }
+
         .login{
             width: 400px;
         }
+
         form{
             width: 250px;
             margin: 60px auto;
         }
+
         h1{
             margin:20px;
             margin-top: 130px;
@@ -36,23 +41,29 @@
             font-weight: bolder;
             text-transform: uppercase;
         }
+
         hr{
             border-top: 2px;
         }
+
         p{
             text-align: center;
             margin: 10px;
         }
+
         .right img{
             width: 450px;
             height: 100%;
+
         }
+
         form label{
             display: block;
             font-size: 16px;
             font-weight: 600;
             padding: 5px;
         }
+
         input{
             width: 100%;
             margin: 2px;
@@ -63,6 +74,7 @@
             border: 1px;
             background-color: #D9D9D9;
         }
+
         button{
             border: none;
             outline: none;
@@ -76,31 +88,34 @@
             background: #00BFFF;
             margin-left: 75px;
         }
+
         button:hover {
             background: red;
         }
+
     </style>
 </head>
 <body>
     <div class="container">
     <div class="right">
-            <img src="gambar2.jpeg" alt="">
+            <img src="{{ asset('images/gambar2.jpeg') }}" alt="">
         </div>
         <div class="login">
-            <form action="">
+            <form action="{{url('/login')}}" method="POST">
+                @csrf
                 <h1>Login</h1>
-                <p>SparkWash Financials</p>
+                <p>Queen CarWash</p>
+            <div >
                 <label for=""></label>
-                <input type="text" 
-                placeholder="Username">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
                 <label for="">
-                <input type="text" 
-                placeholder="Password">
-                <button>Login</button>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
                 </label>
             </form>
         </div>
-
+        
     </div>
 </body>
 </html>
